@@ -71,3 +71,4 @@ platformdirs==3.11.0
 pluggy==1.5.0
 prometheus-client
 gunicorn==21.2.0
+whitenoise
