@@ -1,0 +1,55 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+        <div class="heading">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1 class="text-uppercase">{{ post.title }}</h1>
+                        <p class="mb-0">By Team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'blog_list' %}">Blog</a></li>
+                    <li class="current text-uppercase">{{ post.title }}</li>
+                </ol>
+            </div>
+        </nav>
+    </div><!-- End Page Title -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <section id="blog-details" class="blog-details section">
+                    <div class="container">
+                        <article class="article">
+                            {% if post.image %}
+                            <div class="post-img text-center mb-4">
+                                <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid rounded shadow">
+                            </div>
+                            {% endif %}
+                            
+                            <h2 class="title text-center text-uppercase">{{ post.title }}</h2>
+                            <p class="text-muted text-center">{{ post.created_at|date:"F d, Y" }}</p>
+
+                            <div class="content">
+                                <p>{{ post.content }}</p>
+                            </div><!-- End post content -->
+                        </article>
+                    </div>
+                </section><!-- /Blog Details Section -->
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

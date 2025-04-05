@@ -1,0 +1,141 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+        <div class="heading">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1 class="text-uppercase">About Us</h1>
+                        <p class="mb-0">Empowering Businesses with Cutting-Edge IT Solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li class="current">About Us</li>
+                </ol>
+            </div>
+        </nav>
+    </div><!-- End Page Title -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container" data-aos="fade-up">
+            <div class="row gx-0">
+                <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="content">
+                        <h3>Who We Are</h3>
+                        <h2>Innovating the Future with Technology</h2>
+                        <p>
+                            At ZynTech Solution, we are passionate about leveraging technology to drive business success. 
+                            Our mission is to deliver cutting-edge IT solutions, empowering businesses to innovate, scale, and thrive in the digital era.
+                        </p>
+                        <ul>
+                            <li>✅ Innovation – Staying ahead with the latest technology advancements.</li>
+                            <li>✅ Reliability – Delivering secure and scalable solutions.</li>
+                            <li>✅ Customer Success – Ensuring seamless digital transformation for our clients.</li>
+                        </ul>
+                        <p>Partner with ZynTech Solution and let's build the future together!</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+                    <img src="{% static 'images/about.jpg' %}" class="img-fluid rounded shadow" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section><!-- /About Section -->
+
+    <!-- Our Vision & Mission -->
+    <section id="mission-vision" class="mission-vision section">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card p-4">
+                        <h3 class="text-uppercase">Our Mission</h3>
+                        <p>
+                            At ZynTech Solution, our mission is to empower businesses by providing innovative and scalable IT solutions. 
+                            We believe in transforming industries by integrating smart technology, automation, and seamless digital experiences. 
+                            Our goal is to help businesses of all sizes achieve operational efficiency, enhance productivity, and stay ahead in an ever-evolving technological landscape.
+                        </p>
+                        <p>
+                            We are committed to understanding the unique needs of our clients and delivering tailor-made solutions that drive long-term success. 
+                            By leveraging artificial intelligence, cloud computing, and data analytics, we ensure that businesses not only keep up with technology but lead the way in their respective industries.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card p-4">
+                        <h3 class="text-uppercase">Our Vision</h3>
+                        <p>
+                            Our vision is to become a global leader in digital transformation, revolutionizing industries with next-generation technology solutions. 
+                            We aspire to create a world where businesses are not limited by technological barriers but are empowered by them.
+                        </p>
+                        <p>
+                            We envision a future where automation, artificial intelligence, and machine learning redefine how businesses operate. 
+                            Through our expertise, we aim to bridge the gap between traditional business processes and the digital future. 
+                            Our commitment to innovation, security, and sustainability drives us to build solutions that not only solve current challenges but also anticipate future needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- /Mission & Vision Section -->
+
+    <!-- Our Team -->
+    <section id="team" class="team section">
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Our Team</h2>
+            <p>Meet Our Experts</p>
+        </div>
+
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-member">
+                        <div class="member-img">
+                            <img src="{% static 'images/team/team-1.jpg' %}" class="img-fluid rounded shadow" alt="">
+                        </div>
+                        <div class="member-info text-center">
+                            <h4>Ijaj</h4>
+                            <span>Chief Executive Officer</span>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-member">
+                        <div class="member-img">
+                            <img src="{% static 'images/team/team-2.jpg' %}" class="img-fluid rounded shadow" alt="">
+                        </div>
+                        <div class="member-info text-center">
+                            <h4>Sarah Jhonson</h4>
+                            <span>Product Manager</span>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-member">
+                        <div class="member-img">
+                            <img src="{% static 'images/team/team-3.jpg' %}" class="img-fluid rounded shadow" alt="">
+                        </div>
+                        <div class="member-info text-center">
+                            <h4>William Anderson</h4>
+                            <span>CTO</span>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+            </div>
+        </div>
+    </section><!-- /Team Section -->
+
+</main>
+{% endblock %}

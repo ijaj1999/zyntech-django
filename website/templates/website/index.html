@@ -1,0 +1,874 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+
+{% block content %}
+  
+  <main class="main">
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
+            <p data-aos="fade-up" data-aos-delay="100">We are a team of talented developers</p>
+            <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
+              <a href="{% url 'about' %}" class="btn-get-started">Get Started <i class="bi bi-arrow-right"></i></a>
+              <a href="https://youtu.be/reUZRyXxUs4" class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0">
+                <i class="bi bi-play-circle"></i><span>Watch Video</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+            <img src="{% static 'images/hero-img.png' %}" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+    
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>Who We Are</h3>
+              <h2>At ZynTech Solution, we are passionate about leveraging technology to drive business success.</h2>
+              <p>
+                Whether you're a startup or an established enterprise, we provide customized technology services tailored to your unique needs.
+              </p>
+              <ul>
+                <li>✅ Innovation – Staying ahead with the latest tech advancements.</li>
+                <li>✅ Reliability – Delivering solutions that are secure and scalable.</li>
+                <li>✅ Customer Success – Ensuring seamless digital transformation for our clients.</li>
+              </ul>
+              <p>Partner with ZynTech Solution and let's build the future together!</p>
+              <div class="text-center text-lg-start">
+                <a href="{% url 'about' %}" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Read More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="{% static 'images/about.jpg' %}" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+    
+    <!-- Values Section -->
+    <section id="values" class="values section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Values</h2>
+        <p>What we value most</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <img src="{% static 'images/values-1.png' %}" class="img-fluid" alt="">
+              <h3>Innovation</h3>
+              <p>We embrace the latest technology trends to provide cutting-edge solutions that keep businesses ahead of the competition.</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <img src="{% static 'images/values-2.png' %}" class="img-fluid" alt="">
+              <h3>Growth & Adaptability</h3>
+              <p>Technology evolves rapidly, and so do we. We continuously learn, adapt, and innovate to provide future-ready solutions.</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <img src="{% static 'images/values-3.png' %}" class="img-fluid" alt="">
+              <h3>Integrity & Transparency</h3>
+              <p>We build trust through honest communication, ethical practices, and delivering on our promises.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Values Section -->
+    
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2" class="purecounter"></span>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="2" class="purecounter"></span>
+                <p>Projects</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-headset color-green flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="102" data-purecounter-duration="2" class="purecounter"></span>
+                <p>Hours Of Support</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-people color-pink flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Hard Workers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Stats Section -->
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Features</h2>
+        <p>Our Advanced Features<br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-xl-6" data-aos="zoom-out" data-aos-delay="100">
+            <img src="{% static 'images/features.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-6 d-flex">
+            <div class="row align-self-center gy-4">
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check-circle"></i>
+                  <h3>AI-Driven Automation</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-cloud-arrow-up"></i>
+                  <h3>Cloud Integration & Scalability</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-shield-lock"></i>
+                  <h3>Enterprise-Grade Security</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-speedometer2"></i>
+                  <h3>Ultra-Fast Performance</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-graph-up"></i>
+                  <h3>Data Analytics & Insights</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-ui-checks"></i>
+                  <h3>Seamless User Experience (UX/UI)</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+
+    <!-- Alt Features Section -->
+    <section id="alt-features" class="alt-features section">
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-xl-7 d-flex order-2 order-xl-1" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="row align-self-center gy-5">
+
+              <div class="col-md-6 icon-box">
+                <i class="bi bi-cpu"></i>
+                <div>
+                  <h4>AI-Driven Automation</h4>
+                  <p>Leverage artificial intelligence to streamline processes and enhance decision-making.</p>
+                </div>
+              </div><!-- End Feature Item -->
+    
+              <div class="col-md-6 icon-box">
+                <i class="bi bi-cloud-arrow-up"></i>
+                <div>
+                  <h4>Cloud Integration & Scalability</h4>
+                  <p>Seamlessly integrate with cloud platforms for improved efficiency and scalability.</p>
+                </div>
+              </div><!-- End Feature Item -->
+    
+              <div class="col-md-6 icon-box">
+                <i class="bi bi-shield-lock"></i>
+                <div>
+                  <h4>Enterprise-Grade Security</h4>
+                  <p>Implement robust security measures to protect your business from cyber threats.</p>
+                </div>
+              </div><!-- End Feature Item -->
+    
+              <div class="col-md-6 icon-box">
+                <i class="bi bi-speedometer2"></i>
+                <div>
+                  <h4>Ultra-Fast Performance</h4>
+                  <p>Optimize systems for lightning-fast load times and seamless user experience.</p>
+                </div>
+              </div><!-- End Feature Item -->
+    
+              <div class="col-md-6 icon-box">
+                <i class="bi bi-bar-chart-line"></i>
+                <div>
+                  <h4>Data Analytics & Insights</h4>
+                  <p>Unlock data-driven insights for smarter decision-making and business growth.</p>
+                </div>
+              </div><!-- End Feature Item -->
+    
+              <div class="col-md-6 icon-box">
+                <i class="bi bi-layout-text-window-reverse"></i>
+                <div>
+                  <h4>Seamless User Experience</h4>
+                  <p>Deliver intuitive designs and smooth navigation for an enhanced user experience.</p>
+                </div>
+              </div><!-- End Feature Item -->
+
+            </div>
+
+          </div>
+
+          <div class="col-xl-5 d-flex align-items-center order-1 order-xl-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static 'images/alt-features.png' %}" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Alt Features Section -->
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Check Our Services<br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+    
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-item item-cyan position-relative">
+                    <i class="bi bi-code-slash icon"></i>
+                    <h3>Custom Software Development</h3>
+                    <p>Scalable and secure software solutions tailored to meet your business needs efficiently.</p>
+                    <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div><!-- End Service Item -->
+    
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-item item-orange position-relative">
+                    <i class="bi bi-cloud-check icon"></i>
+                    <h3>Cloud Solutions & Integration</h3>
+                    <p>Seamless migration and cloud management services for enhanced flexibility and security.</p>
+                    <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div><!-- End Service Item -->
+    
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-item item-teal position-relative">
+                    <i class="bi bi-shield-lock icon"></i>
+                    <h3>Cybersecurity Solutions</h3>
+                    <p>Advanced security solutions to safeguard your business from cyber threats and data breaches.</p>
+                    <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div><!-- End Service Item -->
+    
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-item item-red position-relative">
+                    <i class="bi bi-phone icon"></i>
+                    <h3>Mobile & Web App Development</h3>
+                    <p>Develop high-performance, intuitive, and user-friendly apps for businesses and consumers.</p>
+                    <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div><!-- End Service Item -->
+    
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-item item-indigo position-relative">
+                    <i class="bi bi-bar-chart-line icon"></i>
+                    <h3>Data Analytics & AI Solutions</h3>
+                    <p>Leverage AI-driven insights and analytics to make data-backed business decisions.</p>
+                    <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div><!-- End Service Item -->
+    
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                <div class="service-item item-pink position-relative">
+                    <i class="bi bi-headset icon"></i>
+                    <h3>IT Support & Managed Services</h3>
+                    <p>Reliable IT support and proactive management to ensure your systems run smoothly 24/7.</p>
+                    <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div><!-- End Service Item -->
+          
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>F.A.Q</h2>
+        <p>Frequently Asked Questions</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>What IT services does ZynTech Solution offer?</h3>
+                <div class="faq-content">
+                  <p>We provide IT support, cloud computing, cybersecurity, software development, network management, and web development services tailored to businesses of all sizes.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How can I choose the right IT service for my business?</h3>
+                <div class="faq-content">
+                  <p>We offer customized IT solutions based on your business needs. Contact us for a free consultation, and our team will guide you in selecting the best service package.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Do you provide 24/7 IT support?</h3>
+                <div class="faq-content">
+                  <p>Yes! Our Premium Plan includes 24/7 technical support with remote assistance, ensuring your business stays up and running at all times.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="faq-container">
+
+              <div class="faq-item">
+                <h3>Can I upgrade or change my service plan later?</h3>
+                <div class="faq-content">
+                  <p>Absolutely! You can easily upgrade, downgrade, or customize your plan as your business needs evolve. Just reach out to our team for assistance.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How do I get started with ZynTech Solution?</h3>
+                <div class="faq-content">
+                  <p>Simply contact us through our website or email, and we will assist you in setting up your IT services quickly and efficiently.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What makes ZynTech Solution different from other IT service providers?</h3>
+                <div class="faq-content">
+                  <p>We prioritize customer satisfaction, provide personalized IT solutions, and ensure top-tier security and reliability for all your business needs.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio section">
+
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Portfolio</h2>
+            <p>Check our latest work</p>
+          </div><!-- End Section Title -->
+        
+          <div class="container">
+            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+              
+              <!-- Portfolio Filters -->
+              <ul class="portfolio-filters isotope-filters text-center mb-4" data-aos="fade-up" data-aos-delay="100">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-product">Product</li>
+                <li data-filter=".filter-branding">Branding</li>
+                <li data-filter=".filter-books">Books</li>
+              </ul><!-- End Portfolio Filters -->
+        
+              <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+        
+                {% for project in projects %}
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item {{ project.category }}">
+                  <div class="portfolio-content h-100">
+                    <img src="{{ project.image.url }}" class="img-fluid rounded shadow" alt="{{ project.title }}" style="height: 250px; object-fit: cover;">
+                    <div class="portfolio-info text-center p-3">
+                      <h4>{{ project.title }}</h4>
+                      <p>{{ project.description }}</p>
+                      <a href="{{ project.image.url}}" title="{{ project.title }}" data-gallery="portfolio-gallery" class="glightbox preview-link">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="portfolio-details.html" title="More Details" class="details-link">
+                        <i class="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+                {% empty %}
+                <p class="text-center">No projects available.</p>
+                {% endfor %}
+                
+              </div><!-- End Portfolio Container -->
+            </div>
+          </div>
+        </section><!-- /Portfolio Section -->
+    
+       <!-- Testimonials Section -->
+       <section id="testimonials" class="testimonials section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Testimonials</h2>
+          <p>What Our Clients Say About Us</p>
+        </div><!-- End Section Title -->
+  
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 40
+                  },
+                  "1200": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 1
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    "ZynTech Solution transformed our business with their innovative IT solutions. Their support and expertise helped us scale effortlessly. Highly recommended!"
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="{% static 'images/testimonials/testimonials-1.jpg'%}" class="testimonial-img" alt="">
+                    <h3>David Miller</h3>
+                    <h4>CEO, Tech Innovations</h4>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    "The cybersecurity services from ZynTech Solution have been a game-changer. Their proactive approach keeps our data safe and secure."
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="{% static 'images/testimonials/testimonials-2.jpg'%}" class="testimonial-img" alt="">
+                    <h3>Sarah Johnson</h3>
+                    <h4>IT Director, SecureNet</h4>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    "We needed a custom software solution, and ZynTech delivered beyond expectations. Their team was highly professional and efficient."
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="{% static 'images/testimonials/testimonials-3.jpg'%}" class="testimonial-img" alt="">
+                    <h3>Mark Robinson</h3>
+                    <h4>Founder, Startup Hub</h4>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    "The cloud solutions from ZynTech Solution streamlined our operations and improved efficiency. Their expertise is unmatched!"
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="{% static 'images/testimonials/testimonials-4.jpg'%}" class="testimonial-img" alt="">
+                    <h3>Emily Carter</h3>
+                    <h4>Operations Manager, CloudTech</h4>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    "ZynTech’s IT support team is fantastic! Quick response times and expert solutions keep our systems running smoothly."
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="{% static 'images/testimonials/testimonials-5.jpg'%}" class="testimonial-img" alt="">
+                    <h3>Michael Thompson</h3>
+                    <h4>Entrepreneur</h4>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+  
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+  
+        </div>
+  
+      </section><!-- /Testimonials Section -->
+  
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Meet Our Team</h2>
+        <p>The experts behind ZynTech Solution</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'images/team/team-1.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Ijaj Ahmed</h4>
+                <span>Chief Executive Officer</span>
+                <p>Leading ZynTech Solution with a vision for innovation and excellence in IT services.</p>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'images/team/team-2.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Johnson</h4>
+                <span>Product Manager</span>
+                <p>Oversees the development and delivery of top-tier IT solutions for our clients.</p>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'images/team/team-3.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>Chief Technology Officer</span>
+                <p>Bringing cutting-edge technology and innovation to drive our IT solutions forward.</p>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'images/team/team-4.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Finance & Operations Manager</span>
+                <p>Ensuring financial efficiency and operational excellence at ZynTech Solution.</p>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Clients</h2>
+        <p>We work with best clients<br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="{% static 'images/clients/client-1.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'images/clients/client-2.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'images/clients/client-3.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'images/clients/client-4.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'images/clients/client-5.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'images/clients/client-6.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'images/clients/client-7.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'images/clients/client-8.png' %}" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Contact Us</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="200">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>ZynTech, ECR</p>
+                  <p>Chennai , India</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Call Us</h3>
+                  <p>+91 9994 443 815</p>
+                  <p></p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>ijajgroup89@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="500">
+                  <i class="bi bi-clock"></i>
+                  <h3>Open Hours</h3>
+                  <p>Monday - Friday</p>
+                  <p>9:00AM - 05:00PM</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  {% endblock %}
